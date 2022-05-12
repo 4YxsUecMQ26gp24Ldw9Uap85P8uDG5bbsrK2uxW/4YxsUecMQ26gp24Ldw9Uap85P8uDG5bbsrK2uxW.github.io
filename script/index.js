@@ -36,8 +36,9 @@ document.querySelector('#open-nav').addEventListener('click', app.openNav);
 document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 
 document.title = localStorage.getItem('incog||title') || 'My Drive - Google Drive';
-icon.href = localStorage.getItem('incog||icon') || 'https://drive.google.com/favicon.ico';
 window.icon = document.querySelector('#favicon');
+
+icon.href = localStorage.getItem('incog||icon') || 'https://drive.google.com/favicon.ico';
 
 app.on('init', () => {
     app.icon = document.querySelector('#favicon');
