@@ -38,7 +38,7 @@ document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 document.title = localStorage.getItem('incog||title') || 'My Drive - Google Drive';
 window.icon = document.querySelector('#favicon');
 
-icon.href = localStorage.getItem('incog||icon') || 'https://drive.google.com/favicon.ico';
+icon.href = localStorage.getItem('incog||icon') || 'https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_32dp.png';
 
 app.on('init', () => {
     app.icon = document.querySelector('#favicon');
